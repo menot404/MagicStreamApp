@@ -90,11 +90,12 @@ docker-compose -f docker-compose.prod.yaml up --build
 
 ## 🎬 Original Tutorial
 
-▶️ [How to Build the App on YouTube](https://youtu.be/jBf7of9JTV8) — by **GavinLonDigital**
+▶️ [How to Build the App on YouTube]([https://youtu.be/jBf7of9JTV8](https://www.youtube.com/watch?v=lEcULR30-GM&t=8707s)) — by **GavinLonDigital and freeCodeCamp.org
+**
 
 ---
 
 ## 📄 License
 
 This project is based on open-source work by GavinLonDigital.  
-Fork maintained by **ates** for learning purposes.
+Fork maintained by **metnot404** for learning purposes.
