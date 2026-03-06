@@ -1,44 +1,100 @@
 # MagicStream 🎬✨
 
-Movie streaming platform with AI recommendation built with modern web technologies (React/Go/gin-gonic/MongoDB) 
+> **Movie streaming platform** with AI recommendation built with modern web technologies.  
+> `React` · `Go` · `gin-gonic` · `MongoDB` · `Docker`
 
 ---
 
-## About  
-
-This project is a full-stack simulation of a modern **Movie Streaming Platform**, designed to showcase how different technologies can be combined to deliver a scalable, AI-powered application.  
-
-The system brings together a **React-based frontend** for an engaging user experience, a **Go-based backend** for high-performance API services that runs on the gin (gin-gonic) web framework, and an **AI-powered recommendation engine** to personalize movie suggestions using **LangChainGo** and **OpenAI**.  
-
-It also demonstrates how **MongoDB** can serve as a reliable, scalable database solution for managing media metadata and user preferences.  
+> ⚠️ **Fork notice**  
+> This project was originally created by [GavinLonDigital](https://github.com/GavinLonDigital/MagicStream).  
+> I forked it to learn **Docker & CI/CD** as part of the course  
+> *Master Full-Stack Docker & CI/CD – Build a Production-Ready Pipeline*.
 
 ---
 
-## Features
+## 📖 About
 
-- Movie Streaming service simulated on the front end using React and React-Player
-- Web API service written using GO and runs on the gin-gonic web framework 
-- AI Recommendation service using LangChainGo, Go and OpenAI
-- Scalable backend storage provided by MongoDB
+This project is a full-stack simulation of a modern **Movie Streaming Platform**, designed to showcase how different technologies can be combined to deliver a scalable, AI-powered application.
+
+- ⚛️ **React** frontend for an engaging user experience  
+- 🐹 **Go / gin-gonic** backend for high-performance API services  
+- 🤖 **LangChainGo + OpenAI** for AI-powered movie recommendations  
+- 🗄️ **MongoDB** for scalable media metadata and user preferences storage  
+- 🐳 **Docker** for containerized dev & production environments  
 
 ---
 
-## Tech Stack
+## ✨ Features
 
+| Feature | Description |
+|---|---|
+| 🎥 Movie Streaming | Simulated on the frontend using React + React-Player |
+| ⚙️ REST API | Written in Go, running on gin-gonic |
+| 🤖 AI Recommendations | Powered by LangChainGo + OpenAI |
+| 🗄️ Database | Scalable storage via MongoDB |
+| 🐳 Docker Support | Dev & prod Dockerfiles + docker-compose |
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
 | Frontend / Client | JavaScript / React |
 | Backend / Server | Go / gin-gonic |
 | Storage / Database | MongoDB |
- 
----
-
-## Link to Video Tutorial on How to Build the App
-- https://youtu.be/jBf7of9JTV8
+| Containerization | Docker / Docker Compose |
 
 ---
 
-### Installation
+## 🐳 What I Added (Docker & CI/CD)
 
-1. Clone the repo  
-   ```bash
-   git clone https://github.com/GavinLonDigital/MagicStream.git
-   cd MagicStream
+```
+├── Client/magic-stream-client/
+│   ├── Dockerfile.dev
+│   ├── Dockerfile.prod
+│   └── public/env.template.js
+├── Server/MagicStreamServer/
+│   ├── Dockerfile.dev
+│   └── Dockerfile.prod
+├── docker-compose.yaml
+├── docker-compose.dev.yaml
+├── docker-compose.prod.yaml
+└── seed/
+```
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the repo
+
+```bash
+git clone git@github.com:ates/MagicStreamApp.git
+cd MagicStreamApp
+```
+
+### 2. Run in development
+
+```bash
+docker-compose -f docker-compose.dev.yaml up --build
+```
+
+### 3. Run in production
+
+```bash
+docker-compose -f docker-compose.prod.yaml up --build
+```
+
+---
+
+## 🎬 Original Tutorial
+
+▶️ [How to Build the App on YouTube](https://youtu.be/jBf7of9JTV8) — by **GavinLonDigital**
+
+---
+
+## 📄 License
+
+This project is based on open-source work by GavinLonDigital.  
+Fork maintained by **ates** for learning purposes.
