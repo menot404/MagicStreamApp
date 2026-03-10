@@ -1,0 +1,30 @@
+Makefile
+README.md
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose*.yml
+
+# Dependencies
+node_modules/
+__pycache__/
+.venv/
+venv/
+
+# Build
+dist/
+build/
+target/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+logs/
